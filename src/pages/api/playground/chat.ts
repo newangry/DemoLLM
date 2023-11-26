@@ -26,7 +26,7 @@ export default async function handler(
     const matched_data = await supabaseAdmin.rpc("matched_sections", {
         embedding: embedding_data.embedding.data[0].embedding,
         match_threshold: 0.76,
-        match_count: 30,
+        match_count: 25,
     });
 
     console.log(matched_data);
